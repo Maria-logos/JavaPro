@@ -1,23 +1,31 @@
 package app;
 
+import java.util.Scanner;
+
+// Виправте цей клас
 public class Main {
-    private static final double CONV_K = 2.20462;
 
     public static void main(String[] args) {
-        System.out.println("Converter App.");
-        System.out.println("Version 2.0");
-        double kgs = 5;
-        double pnds = 12;
-        double pounds = convKgsToPounds(kgs);
-        double kilos = convPoundsToKgs(pnds);
-        System.out.println("Result is " + pounds + " pounds. " + kilos + " kgs.");
-    }
-    private static double convKgsToPounds(double kgs) {
-        return kgs * CONV_K;
+        Customer customer = getCustomer(getData());
+        String output = "Customer: " + customer.getName() +
+                ", phone " + customer.getPhone();
+        getOutput(output);
     }
 
-    private static double convPoundsToKgs(double pnds) {
-        return pnds / CONV_K;
+    public static String[] getData() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter customer name: ");
+        String custName = sc.nextLine().trim();
+        System.out.print("Enter customer phone: ");
+        String custPhone = sc.nextLine().trim();
+        return new String[]{custName, custPhone};
     }
 
+    public static Customer getCustomer(String[] data) {
+        return new Customer(data[0], data[1]);
+    }
+
+    public static void getOutput(String output) {
+        System.out.println(output);
+    }
 }
