@@ -13,7 +13,6 @@ public class FileHandler {
         Path newFile;
         try {
             newFile = Files.createFile(Path.of(path));
-           // File dir = new File(newFile);
         } catch (FileNotFoundException e) {
             return "File already exists!" + e.getMessage();
         } catch (IOException e) {
