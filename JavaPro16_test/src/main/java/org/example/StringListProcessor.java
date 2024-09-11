@@ -1,4 +1,4 @@
-package app;
+package org.example;
 
 public class StringListProcessor {
     public static int countUppercase(String s)

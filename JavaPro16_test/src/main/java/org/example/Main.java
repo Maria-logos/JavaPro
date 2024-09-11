@@ -1,4 +1,5 @@
-package app;
+package org.example;
+
 
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -10,7 +11,7 @@ interface StringManipulator {
 public class Main {
 
     public static void main(String[] args) {
-         MathOperation math = new MathOperation() {
+        MathOperation math = new MathOperation() {
             @Override
             public int operate(int a, int b) {
                 return a + b;
@@ -29,5 +30,3 @@ public class Main {
         System.out.println(randomIntegerSupplier.get());
     }
 }
-
-
