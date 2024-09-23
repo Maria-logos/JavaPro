@@ -19,7 +19,7 @@ public class TestAlgorytm {
         assertEquals(3, index);
         target = 770;
         index = ArrayUtils.binarySearch(arr, target);
-        // check if index of 770 is -1
+        // check if index of 770 is -1 - not found
         assertEquals(-1, index);
 
     }
