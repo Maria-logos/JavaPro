@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestAlgorytm {
     @Test
-    public void testSortandFind() {
+    public void testSortAndFind() {
         int[] arr = new int[] {120, 11, 130, 50, 16, 77};
         ArrayUtils arrayUtil = new ArrayUtils();
         arrayUtil.mergeSort(arr);
