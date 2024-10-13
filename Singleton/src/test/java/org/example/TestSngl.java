@@ -15,7 +15,6 @@ public class TestSngl {
         logger2.log ("Second message on logs");
         logger2.log ("Third message on logs");
 
-
         Assertions.assertEquals(logger2, logger1);
         Assertions.assertEquals(3, logger2.getMessageCnt());
     }
