@@ -9,8 +9,8 @@ public class Main {
         System.out.println("\n");
 
         Logger logger2 = Logger.getInstance();
-        logger2.log ("Second message on logs");
-        logger2.log ("Third message on logs");
+        logger2.log ("Second message in logs");
+        logger2.log ("Third message in logs");
 
         System.out.println(logger2.equals(logger1));
         logger1.printLogs();
