@@ -6,7 +6,7 @@ import java.util.List;
 public class Logger {
 
     private static Logger logger;
-    private List<String> logList;
+    private final List<String> logList;
 
     // Приватний конструктор, щоб уникнути створення об'єктів ззовні класу
     private Logger()
